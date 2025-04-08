@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+</head>
+<body>
+  <h1>Welcome to my website!</h1>
+  <p>This is a paragraph.</p>
+  <p>Click or double-click me to see the text change.</p>
+  <script>
+    const h1 = document.querySelector('h1');
+    const p = document.querySelector('p');
+
+    h1.addEventListener('click', () => {
+      h1.textContent = 'Hello, World!';
+    });
+
+    p.addEventListener('dblclick', () => {
+      p.textContent = 'This is a new paragraph.';
+    });
+  </script>
+</body>
+</html>
